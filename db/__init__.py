@@ -1,7 +1,7 @@
 import environ
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.orm import Session
-from .model import *
+from db.model import *
 
 env = environ.Env(DEBUG=(bool, False))
 environ.Env.read_env()
@@ -11,7 +11,3 @@ engine = create_engine(DB_URL, echo=True)
 engine.connect()
 metadata = MetaData()
 session = Session(engine)
-
-
-
-__all__ = ['User']

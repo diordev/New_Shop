@@ -1,5 +1,6 @@
-import enum
+__all__ = ['User']
 
+import enum
 from sqlalchemy import Column, Integer, String, Float, Enum, Numeric
 from sqlalchemy.orm import declarative_base
 
