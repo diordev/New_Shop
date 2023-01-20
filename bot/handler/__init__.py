@@ -1,7 +1,6 @@
-from bot.handler.id_filter import *
-
+from aiogram import types
+from bot.dispacher import dp
 
 @dp.message_handler(commands='start')
 async def start_handler(msg: types.Message):
-    print(msg.chat.id)
-    await msg.reply('<b>Assalomu alaykum</b>', 'HTML')
+    await msg.reply('<b>Successful project 😍💥</b>', 'HTML')
