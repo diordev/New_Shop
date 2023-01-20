@@ -10,5 +10,4 @@ def f():
 
 
 print(f())
-
-print(1)
+print('hello')
