@@ -10,4 +10,4 @@ if __name__ == '__main__':
     Base.metadata.create_all(engine)
     executor.start_polling(dp, skip_updates=True)
 
-print("6+546456456")
+print("6+54645hjkhjhkjhjk6456")
